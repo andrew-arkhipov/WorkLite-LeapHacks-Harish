@@ -1,0 +1,138 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<link rel = "stylesheet" type="text/css" href="css/intakeStyle.css"/>
+
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script src="form.js"></script>
+<!DOCTYPE html>
+<header> 
+
+    <img alt="logo" src="images/logo.PNG" class="logoimg" />
+
+</header>
+
+<div id="info">
+    
+    <label id="firstlabel">First Name:</label><br>
+    <input type="text" id="firstInput"><br>
+    <label id="lastLabel">Last Name:</label><br>
+    <input type="text" id="lastInput"><br>
+    <label id="phoneLabel">Phone Number:</label><br>
+    <input type="text" id="phoneInput"><br>
+    
+</div>
+
+<div class="chooseLoc">
+    <label id="locLabel">Location:</label><br>  
+        <select id="test1">       
+            <option>Intersection</option>
+            <option>Stop Light</option>
+            <option>Highway</option>
+        </select><br>
+</div>
+
+<div class="chooseInj">
+    <label id="injLabel">Injury Type:</label><br>
+        <select multiple id="test2">
+            <option>Head </option>
+            <option>Neck</option>
+            <option>Shoulders</option>
+            <option>Back</option>
+            <option>Knees</option>
+            <option>Wrist</option>
+        </select><br>   
+</div>
+
+<div class="chooseAmb">
+    <label id="ambLabel">Ambulance:</label><br>  
+        <select id="test3">       
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+</div>
+
+<div class="chooseER">
+    <label id="erLabel">ER:</label><br>  
+        <select id="test4">       
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+</div>
+
+<div class="chooseDrunk">
+    <label id="drunkLabel">Drunk Driver:</label><br>  
+        <select id="test5">       
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+</div>
+
+<div class="choosePain">
+    <label id="painLabel">Pain Level:</label><br>  
+        <select id="test6">       
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select><br>
+</div>
+
+<div class="chooseEm">
+    <label id="emLabel">Emotional Distress:</label><br>  
+        <select id="test7">       
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+        </select><br>
+</div>
+
+<label id="passLabel">Number of Passengers:</label><br>
+<input type="text" id="passInput"><br>
+
+<div class="chooseFault">
+    <label id="faultLabel">At Fault:</label><br>  
+        <select id="test8">       
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+</div>
+
+<div class="chooseType">
+    <label id="typeLabel">Accident Type:</label><br>  
+        <select id="test9">       
+            <option>Head on Collision</option>
+            <option>T Bone</option>
+            <option>Rear End</option>
+        </select><br>
+</div>
+
+<div class="chooseRoll">
+    <label id="rollLabel">Roll Over:</label><br>  
+        <select id="test10">       
+            <option>Yes</option>
+            <option>No</option>
+        </select><br>
+</div>
+
+
+<button id="submit" >Submit</button>
+
+
+
+</html>
+
