@@ -4,13 +4,13 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Pier Sans;
     background: #fafafa;
     overflow-y: hidden;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: Pier Sans;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;

@@ -13,8 +13,8 @@ body {
 
 #logo {
     position: absolute;
-    width: 600px;
-    height: 211px;
+    width: 409px;
+    height: 144px;
     left: 50%;
     text-align:center;
     transform: translateX(-50%);
@@ -33,7 +33,7 @@ body {
     font-family: Pier Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 72px;
     text-align: center;
 
@@ -65,14 +65,14 @@ body {
 #firm {
     position: absolute;
     width: 350px;
-    height: 60px;
+    height: 55px;
     left: 50%;
     text-align:center;
     transform: translateX(-50%);
-    top: 59%;
+    top: 63%;
     border: 3px solid #004A9D;
      
-    font-family: "Switzera ADF";
+    font-family: "Pier Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -89,10 +89,10 @@ body {
     left: 50%;
     text-align:center;
     transform: translateX(-50%);
-    top: 70%;
+    top: 78%;
      
      
-    font-family: "Switzera ADF";
+    font-family: "Pier Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
