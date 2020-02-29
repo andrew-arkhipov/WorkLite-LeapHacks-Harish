@@ -6,6 +6,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    overflow-y: hidden;
 }
 
 p {
@@ -68,12 +69,16 @@ a:focus {
 }
 .graph{
     margin-top: -30px;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 89.5%;
+    max-height: 50%;
     align-items: center;
+    border-radius: 20px;
+    width: 1800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* ---------------------------------------------------
     SIDEBAR STYLE
@@ -91,7 +96,7 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: rgb(21, 66, 243);
+    background: #0741AD;
     color: #fff;
     transition: all 0.3s;
     
@@ -129,7 +134,7 @@ a:focus {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #183de4;
+    background: #0741AD;
 }
 
 a[data-toggle="collapse"] {
@@ -147,7 +152,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #183de4;
+    background: #0741AD;
 }
 
 ul.CTAs {
@@ -169,7 +174,7 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #183de4 !important;
+    background: #0741AD !important;
     color: #fff !important;
 }
 
@@ -204,4 +209,58 @@ a.article:hover {
 h3 {
     text-align: center;
     padding-top: 30px;
+}
+.list-inline{
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-large;
+    
+}
+ .list-inline-item{
+    margin: 50px;
+} 
+.card-title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+}
+.card-text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size:60px;
+}
+
+#card1 {
+    /* position: absolute; */
+    left: 5.3%;
+    
+}
+
+#card2 {
+    /* position: absolute; */
+    left: 10.6%;
+    
+}
+
+#card3 {
+    /* position: absolute; */
+    left: 16%;
+    
+}
+
+
+
+.card{
+    width: 26%;
+    background-color:#0741AD;
+    color: white;
+    border-radius: 15px;
+    margin-top:3%;
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
