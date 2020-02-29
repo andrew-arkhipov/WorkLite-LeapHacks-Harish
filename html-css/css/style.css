@@ -13,27 +13,27 @@ body {
 
 #logo {
     position: absolute;
-    width: 409px;
-    height: 144px;
+    width: 600px;
+    height: 211px;
     left: 50%;
     text-align:center;
     transform: translateX(-50%);
-    top: 22px;
+    
 }
 
 #title {
     position: absolute;
-    width: 940px;
+    width: 1200px;
     height: 80px;
     left: 50%;
     text-align:center;
     transform: translateX(-50%);
-    top: 183px;
+    top: 25%;
 
     font-family: Pier Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 70px;
     line-height: 72px;
     text-align: center;
 
@@ -42,17 +42,17 @@ body {
 
 #description {
     position: absolute;
-    width: 1266px;
+    width: 1066px;
     height: 130px;
     left: 50%;
     text-align:center;
     transform: translateX(-50%);
-    top: 281px;
+    top: 40%;
 
     font-family: Pier Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 36px;
     text-align: center;
 
@@ -101,4 +101,9 @@ body {
     background: #0741AD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+
+#login:hover {
+  background: #063791;
+  color: #e0e0e0;
 }
