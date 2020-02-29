@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   var firebaseConfig = {
     apiKey: "AIzaSyDofv8FSUNrBM7mQ-on5oMQRO3IpGaEKq4",
     authDomain: "worklite-1ab69.firebaseapp.com",
@@ -8,6 +9,8 @@ $(document).ready(function () {
   firebase.initializeApp(firebaseConfig);
 
   var database = firebase.database();
+
+  var firm = localStorage.getItem("firm");
 
   $("#submit").click(function(){
     var firstName = $("#firstInput").val();
@@ -72,7 +75,8 @@ $(document).ready(function () {
       Passengers: passenger,
       Fault: fault,
       Type: type,
-      Roll: roll
+      Roll: roll,
+      Firm: firm
     });
 
 
