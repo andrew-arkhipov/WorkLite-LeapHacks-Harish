@@ -97,10 +97,20 @@ $(document).ready(function () {
     
 
     gotData();
+    console.log("start");
+    var delayInMilliseconds = 500; 
+
+    setTimeout(function() {
+
+      $(location).attr("href", "model.html");
+      $(body).css({ opacity: 0.1 });
+    }, delayInMilliseconds);
     
-    $(location).attr("href", "model.html");
+  
 
     
   });
+
+
 });
 

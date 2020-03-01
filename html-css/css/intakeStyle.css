@@ -9,6 +9,8 @@
 }
 
 
+
+
 input {
     width:350px;
     display: inline-block;
@@ -16,7 +18,7 @@ input {
   }
 
 #firstLabel{
-    
+
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
