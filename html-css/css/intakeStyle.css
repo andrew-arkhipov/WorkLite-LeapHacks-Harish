@@ -3,23 +3,366 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-top: -40px;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+
+input {
+    width:350px;
+    display: inline-block;
+    height: 30px;
+  }
+
+#firstLabel{
     
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 16%;
+    left: 20%; 
+    
+}
+
+#firstInput{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 20.3%;
+    left: 20%;
+    width: 20%;
+}
+
+#lastInput{
+
+    /* display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 20.3%;
+    left: 47.5%; */
+
+    display: block;
+    margin-left: auto;
+    margin-left: 35%;
+    margin-top: -61px;
+    top: 20.3%;
+    left: 46.8%;
+    width: 25%; 
+}
+#lastlabel{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 16%;
+    left: 46.8%;  
+}
+
+#phoneInput{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 20.3%;
+    left: 73.1%;
+    width: 25%;
+}
+#phoneLabel{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 16%;
+    left: 73.1%;  
+}
+
+#locLabel{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 30.5%;
+    left: 20%; 
+    
+}
+
+#test1{
+
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 34.3%;
+    left: 20%; 
+    width: 350;
+    width: 25%;
+    
+}
+
+
+#injLabel{
+
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 30.5%;
+    left: 46.8%; 
+}
+#test2{
+
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 34.3%;
+    left: 46.8%; 
+    width: 350;
+    width: 25%;
+
+}
+
+#test3{
+
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 58%;
+    left: 73.1%; 
+    width: 100px;
+    height: 30px;
+    width: 10%;
+}
+#ambLabel{
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 53.7%;
+    left: 73.1%; 
+
+}
+
+#test4{
+
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 58%;
+    left: 86%; 
+    width: 100px;
+    height: 30px;
+
+}
+
+#erLabel{
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 53.7%;
+    left: 86%; 
+
+}
+
+#test5{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 34.73%;
+    left: 73.1%; 
+    width: 350px;
+    width: 25%;
+
+}
+
+
+#drunkLabel{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 30.5%;
+    left: 73.1%; 
+
+}
+
+#test6{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 58%;
+    left: 34%; 
+    width: 85px;
+    height: 30px;
+}
+
+
+#painLabel{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 53.7%;
+    left: 34%; 
+    /* width: 100px; */
+
+}
+
+#passLabel{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 53.7%;
+    left: 46.8%; 
+}
+
+
+#passInput{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 58%;
+    left: 46.8%; 
+    width: 25%;
+
+}
+
+#emLabel{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 53.7%;
+    left: 20%;
+
+}
+#test7{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 58%;
+    height: 30px;
+    width: 150px;
+    left: 20%;
+    width: 8%;
+}
+
+#faultLabel{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 65.7%;
+    left: 20%;
+    
+
+}
+#test8{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    height: 30px;
+    width: 350px;
+    top: 70%;
+    left: 20%;
+    width: 25%;
+}
+
+#typeLabel{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 65.7%;
+    left: 46.8%;
+}
+#test9{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 70%;
+    height: 30px;
+    width: 350px;
+    left: 46.8%;
+    width: 25%;
+}
+
+#rollLabel{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 65.7%;
+    left: 73.1%;
+}
+#test10{
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 70%;
+    height: 30px;
+    width: 350px;
+    left: 73.1%;
+    width: 25%;
+}
+
+#submit{
+
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -120px;
+    max-width: 100%;
+    max-height: 100%; 
+
+}
+
+.custom-file-label{
+
+    
+    display: inline-block;
+    margin-top: -100px;
+    max-width: 50%;
+    margin-left: 25%;
+    text-align: center;
+
+}
+.photo{
+
+    opacity: 0.5;
 }
 
 #info{
 
-    /* display: inline-block; */
-    /* margin-left: auto; */
     margin-right: auto;
-    /* position: absolute; */
     top: 35%;
-    /* position: absolute; */
 }
-.chooseInj{
-
-    /* display: inline-block; */
-    
+.chooseInj{    
     width: 50%;
-    /* float: center; */
 }
+/* .form_content{
+    max-width: 30px;
+} */

@@ -5,134 +5,209 @@
 <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
 <script src="form.js"></script>
 <!DOCTYPE html>
-<header> 
 
-    <img alt="logo" src="images/logo.PNG" class="logoimg" />
 
-</header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<div id="info">
+    <title>WORKLITE</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/homeStyle.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="intake.html">Intake</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Treatment</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Negotiation</a>
+                </li>
+                <li>
+                    <a href="#">Medical Bill Reduction</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+
+    <div id="content">
+
+        <img alt="logo" src="images/85044240_199265814472169_3739667649995472896_n.png" class="logoimg" />
+
+<div id = "form_content">
+
+    <div id="info">
     
-    <label id="firstlabel">First Name:</label><br>
-    <input type="text" id="firstInput"><br>
-    <label id="lastLabel">Last Name:</label><br>
-    <input type="text" id="lastInput"><br>
-    <label id="phoneLabel">Phone Number:</label><br>
-    <input type="text" id="phoneInput"><br>
+        <label id="firstlabel">First Name:</label><br>
+        <input type="text" id="firstInput"><br>
+        <label id="lastLabel">Last Name:</label><br>
+        <input type="text" id="lastInput">
+        <label id="phoneLabel">Phone Number:</label><br>
+        <input type="text" id="phoneInput">
+    </div>
     
+    
+    <div class="chooseLoc">
+        <label id="locLabel">Location of Accident:</label><br>  
+            <select id="test1">       
+                <option>Intersection</option>
+                <option>Stop Light</option>
+                <option>Highway</option>
+            </select><br>
+    </div>
+    
+    <div class="chooseInj">
+        <label id="injLabel">Injury Type:</label><br>
+            <select multiple id="test2">
+                <option>Head </option>
+                <option>Neck</option>
+                <option>Shoulders</option>
+                <option>Back</option>
+                <option>Knees</option>
+                <option>Wrist</option>
+            </select><br>   
+    </div>
+    
+    <div class="chooseAmb">
+        <label id="ambLabel">Ambulance:</label><br>  
+            <select id="test3">       
+                <option>Yes</option>
+                <option>No</option>
+            </select><br>
+    </div>
+    
+    <div class="chooseER">
+        <label id="erLabel">ER:</label><br>  
+            <select id="test4">       
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+    </div>
+    
+    <div class="chooseDrunk">
+        <label id="drunkLabel">Drunk Driver:</label><br>  
+            <select id="test5">       
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+    </div>
+    
+    <div class="choosePain">
+        <label id="painLabel">Pain Level:</label><br>  
+            <select id="test6">       
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+    </div>
+    
+    <div class="chooseEm">
+        <label id="emLabel">Emotional Distress:</label><br>  
+            <select id="test7">       
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+    </div>
+    
+    <label id="passLabel">Number of Passengers:</label><br>
+    <input type="text" id="passInput"><br>
+    
+    <div class="chooseFault">
+        <label id="faultLabel">At Fault:</label><br>  
+            <select id="test8">       
+                <option>Yes</option>
+                <option>No</option>
+            </select><br>
+    </div>
+    
+    <div class="chooseType">
+        <label id="typeLabel">Accident Type:</label><br>  
+            <select id="test9">       
+                <option>Head on Collision</option>
+                <option>T Bone</option>
+                <option>Rear End</option>
+            </select><br>
+    </div>
+    
+    <div class="chooseRoll">
+        <label id="rollLabel">Roll Over:</label><br>  
+            <select id="test10">       
+                <option>Yes</option>
+                <option>No</option>
+            </select><br>
+    </div>
 </div>
 
-<div class="chooseLoc">
-    <label id="locLabel">Location:</label><br>  
-        <select id="test1">       
-            <option>Intersection</option>
-            <option>Stop Light</option>
-            <option>Highway</option>
-        </select><br>
+
+
+<form>
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="customFile">
+      
+      <label class="custom-file-label" for="customFile"><a class="photo">select photo</a></label>
+    </div>
+  </form>
+  
+  <script>
+  // Add the following code if you want the name of the file appear on select
+  
+  </script><br>
+
+<button id="submit" href="model.html" class="btn btn-primary">Submit</button>
+
+    </div>
 </div>
-
-<div class="chooseInj">
-    <label id="injLabel">Injury Type:</label><br>
-        <select multiple id="test2">
-            <option>Head </option>
-            <option>Neck</option>
-            <option>Shoulders</option>
-            <option>Back</option>
-            <option>Knees</option>
-            <option>Wrist</option>
-        </select><br>   
-</div>
-
-<div class="chooseAmb">
-    <label id="ambLabel">Ambulance:</label><br>  
-        <select id="test3">       
-            <option>Yes</option>
-            <option>No</option>
-        </select><br>
-</div>
-
-<div class="chooseER">
-    <label id="erLabel">ER:</label><br>  
-        <select id="test4">       
-            <option>Yes</option>
-            <option>No</option>
-        </select><br>
-</div>
-
-<div class="chooseDrunk">
-    <label id="drunkLabel">Drunk Driver:</label><br>  
-        <select id="test5">       
-            <option>Yes</option>
-            <option>No</option>
-        </select><br>
-</div>
-
-<div class="choosePain">
-    <label id="painLabel">Pain Level:</label><br>  
-        <select id="test6">       
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-        </select><br>
-</div>
-
-<div class="chooseEm">
-    <label id="emLabel">Emotional Distress:</label><br>  
-        <select id="test7">       
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-        </select><br>
-</div>
-
-<label id="passLabel">Number of Passengers:</label><br>
-<input type="text" id="passInput"><br>
-
-<div class="chooseFault">
-    <label id="faultLabel">At Fault:</label><br>  
-        <select id="test8">       
-            <option>Yes</option>
-            <option>No</option>
-        </select><br>
-</div>
-
-<div class="chooseType">
-    <label id="typeLabel">Accident Type:</label><br>  
-        <select id="test9">       
-            <option>Head on Collision</option>
-            <option>T Bone</option>
-            <option>Rear End</option>
-        </select><br>
-</div>
-
-<div class="chooseRoll">
-    <label id="rollLabel">Roll Over:</label><br>  
-        <select id="test10">       
-            <option>Yes</option>
-            <option>No</option>
-        </select><br>
-</div>
-
-
-<button id="submit" >Submit</button>
-
-
-
 </html>
-

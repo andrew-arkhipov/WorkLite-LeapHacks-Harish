@@ -12,9 +12,19 @@ $(document).ready(function () {
 
   var firm = localStorage.getItem("firm");
 
-  $("#submit").click(function(){
+  var pic = "";
+
+  $(".custom-file-input").on("change", function() {
+    var fileName = $(this).val().split("\\").pop();
+    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    pic = $(this).val();
+    console.log(pic);
+  });
+
+  function gotData() {
     var firstName = $("#firstInput").val();
     console.log(firstName);
+
     var lastName = $("#lastInput").val();
     console.log(lastName);
 
@@ -58,6 +68,8 @@ $(document).ready(function () {
     var roll = $("#test10 option:selected").text();
     console.log(roll);
 
+    $(location).attr("href", "model.html");
+
 
 
     var ref = database.ref("Orders/"+firstName);
@@ -76,9 +88,17 @@ $(document).ready(function () {
       Fault: fault,
       Type: type,
       Roll: roll,
-      Firm: firm
+      Firm: firm,
+      Picture: pic
     });
+  }
 
+  $("#submit").click(function(){
+    
+
+    gotData();
+    
+    $(location).attr("href", "model.html");
 
     
   });
